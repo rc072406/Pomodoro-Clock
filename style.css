@@ -1,0 +1,129 @@
+body {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pomodoro-container {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #cc3333; /* Tomato Red */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.emoji {
+    font-size: 1em;
+}
+
+/* --- Length Controls Styling --- */
+.length-controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.control-box {
+    flex: 1;
+}
+
+.control-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.buttons-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#break-length, #session-length {
+    font-size: 1.8em;
+    font-weight: bold;
+    min-width: 30px;
+}
+
+/* --- Buttons Styling --- */
+button {
+    background-color: #444;
+    color: #cc3333;
+    border: 2px solid #cc3333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #555;
+    border-color: #ff4444;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #666;
+}
+
+/* --- Timer Display Styling --- */
+.timer-display {
+    border: 4px solid #cc3333;
+    border-radius: 15px;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.timer-display h3 {
+    font-size: 1.8em;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+#time-left {
+    font-size: 5em;
+    font-weight: 200;
+    line-height: 1;
+}
+
+/* Dynamic color change for phases */
+.session-time {
+    border-color: #cc3333; /* Red for Session */
+    color: #cc3333;
+}
+
+.break-time {
+    border-color: #33cc66; /* Green for Break */
+    color: #33cc66;
+}
+
+/* --- Main Controls Styling --- */
+.main-controls button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+/* Hide the audio element */
+#beep {
+    display: none;
+}
